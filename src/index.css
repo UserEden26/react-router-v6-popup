@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  align-items: center;
+  text-align: center;
+}
+
+main{
+  position: relative;
+}
+
+
+section {
+  animation: popUp-enter 0.5s ease-out forwards;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 20rem;
+  background-color: rgb(220, 220, 220);
+}
+
+@keyframes popUp-enter{
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(90%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width:30%;
+  margin: auto;
+}
+
